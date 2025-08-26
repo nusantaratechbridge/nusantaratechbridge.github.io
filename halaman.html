@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara TechBridge - Python Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-code logo-icon"></i>
+                    <span>Nusantara TechBridge</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Bridging Indonesian Tech Talent with European Innovation</h1>
+                <h2 class="hero-subtitle">Python Development Excellence</h2>
+                <p class="hero-description">We connect skilled Indonesian Python developers with European companies seeking top-tier talent for custom software solutions, data science projects, and system integration.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="about-content">
+                <div class="about-card fade-in">
+                    <i class="fas fa-globe-europe"></i>
+                    <h3>European Quality Standards</h3>
+                    <p>Our developers adhere to European quality standards and best practices, ensuring robust and maintainable code.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Cultural Bridge</h3>
+                    <p>We understand both European business culture and Indonesian work ethic, ensuring smooth collaboration.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Flexible Engagement</h3>
+                    <p>Choose from project-based cooperation or long-term team augmentation based on your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Custom Python Development</h3>
+                    <p>Tailor-made software solutions built with modern Python frameworks like Django, Flask, and FastAPI.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Data-driven solutions using Pandas, NumPy, Scikit-learn, and TensorFlow for your business intelligence needs.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-plug service-icon"></i>
+                    <h3>System Integration</h3>
+                    <p>Seamless integration of Python solutions with your existing systems and workflows.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-globe service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive web applications using React, Vue.js, and Python backends for optimal user experiences.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-cloud service-icon"></i>
+                    <h3>Cloud Consulting & Engineering</h3>
+                    <p>End-to-end cloud solutions with AWS, Azure, and GCP, from migration to optimization and management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-tabs">
+                <button class="portfolio-tab active" data-target="data-science">Data Science</button>
+                <button class="portfolio-tab" data-target="web-dev">Web Development</button>
+                <button class="portfolio-tab" data-target="cloud">Cloud Engineering</button>
+            </div>
+
+            <!-- Data Science Portfolio -->
+            <div class="portfolio-content active" id="data-science">
+                <div class="portfolio-slider">
+                    <div class="slides" id="dataScienceSlider">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    Predictive Analytics Dashboard
+                                </div>
+                                <div class="slide-details">
+                                    <h3>Predictive Maintenance System</h3>
+                                    <p class="client">Manufacturing Client - Germany</p>
+                                    <p>Developed a machine learning model to predict equipment failures before they occur, reducing downtime by 35% and saving €200k annually in maintenance costs.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">Python</span>
+                                        <span class="tech-pill">TensorFlow</span>
+                                        <span class="tech-pill">Scikit-learn</span>
+                                        <span class="tech-pill">Tableau</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    Customer Segmentation Model
+                                </div>
+                                <div class="slide-details">
+                                    <h3>Customer Behavior Analysis</h3>
+                                    <p class="client">E-commerce Client - Netherlands</p>
+                                    <p>Built a clustering model to segment customers based on purchasing behavior, resulting in a 22% increase in conversion rates through personalized marketing campaigns.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">Python</span>
+                                        <span class="tech-pill">K-means Clustering</span>
+                                        <span class="tech-pill">Pandas</span>
+                                        <span class="tech-pill">Power BI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" data-slider="dataScienceSlider">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" data-slider="dataScienceSlider">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider-dots" id="dataScienceDots"></div>
+                </div>
+            </div>
+
+            <!-- Web Development Portfolio -->
+            <div class="portfolio-content" id="web-dev">
+                <div class="portfolio-slider">
+                    <div class="slides" id="webDevSlider">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    E-commerce Platform
+                                </div>
+                                <div class="slide-details">
+                                    <h3>Modern E-commerce Solution</h3>
+                                    <p class="client">Retail Client - France</p>
+                                    <p>Developed a full-stack e-commerce platform with personalized recommendations, resulting in a 40% increase in sales and improved customer retention.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">Django</span>
+                                        <span class="tech-pill">React</span>
+                                        <span class="tech-pill">PostgreSQL</span>
+                                        <span class="tech-pill">Stripe API</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    Real Estate Portal
+                                </div>
+                                <div class="slide-details">
+                                    <h3>Property Management System</h3>
+                                    <p class="client">Real Estate Client - UK</p>
+                                    <p>Created a comprehensive property management portal with virtual tours, automated valuation models, and seamless booking system, handling 500+ daily users.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">Vue.js</span>
+                                        <span class="tech-pill">FastAPI</span>
+                                        <span class="tech-pill">MongoDB</span>
+                                        <span class="tech-pill">AWS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" data-slider="webDevSlider">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" data-slider="webDevSlider">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider-dots" id="webDevDots"></div>
+                </div>
+            </div>
+
+            <!-- Cloud Engineering Portfolio -->
+            <div class="portfolio-content" id="cloud">
+                <div class="portfolio-slider">
+                    <div class="slides" id="cloudSlider">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    Cloud Migration
+                                </div>
+                                <div class="slide-details">
+                                    <h3>AWS Infrastructure Migration</h3>
+                                    <p class="client">Financial Services Client - Switzerland</p>
+                                    <p>Migrated legacy on-premise systems to AWS, improving scalability and reducing infrastructure costs by 45% while maintaining strict security compliance.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">AWS</span>
+                                        <span class="tech-pill">Terraform</span>
+                                        <span class="tech-pill">Docker</span>
+                                        <span class="tech-pill">Kubernetes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-image">
+                                    DevOps Implementation
+                                </div>
+                                <div class="slide-details">
+                                    <h3>CI/CD Pipeline Automation</h3>
+                                    <p class="client">Tech Startup - Germany</p>
+                                    <p>Implemented a complete DevOps pipeline with automated testing and deployment, reducing release cycles from 2 weeks to 2 days and improving code quality.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-pill">Azure</span>
+                                        <span class="tech-pill">Jenkins</span>
+                                        <span class="tech-pill">GitHub Actions</span>
+                                        <span class="tech-pill">Kubernetes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" data-slider="cloudSlider">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" data-slider="cloudSlider">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider-dots" id="cloudDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="member-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex R.</h3>
+                        <p class="member-role">Founder & CEO</p>
+                        <p>Meteorology background with expertise in data analysis and Python development.</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="member-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Budi S.</h3>
+                        <p class="member-role">Lead Developer</p>
+                        <p>10+ years of experience in Python development and system architecture.</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="member-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah W.</h3>
+                        <p class="member-role">Data Scientist</p>
+                        <p>Specialized in machine learning and predictive analytics for business applications.</p>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="member-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Dmitri V.</h3>
+                        <p class="member-role">European Relations</p>
+                        <p>Connects European clients with the right talent for their specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Hamburg, Germany & Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@nusantara-techbridge.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+49 123 456 789</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-code logo-icon"></i>
+                    <span>Nusantara TechBridge</span>
+                </div>
+                <p>Bridging Indonesian Python talent with European innovation</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2023 Nusantara TechBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
